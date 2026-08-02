@@ -1,0 +1,13 @@
+# Self-contained 2D / low-dimensional figures: Duffing (B-type), Van der Pol
+# (P-type), ring (D-type), 8-fixed-point, two-limit-cycle, and the budget/width
+# analyses. No external toolkit needed; the bundled checkpoints in models/
+# reproduce every figure in this group.
+#
+# Tested with Python 3.10.16 and the exact versions in the trailing comments.
+
+numpy>=1.24          # tested 1.26.0
+scipy>=1.10          # tested 1.15.3
+torch>=2.0           # tested 2.1.2 (CPU build)
+matplotlib>=3.5      # tested 3.5.0
+seaborn>=0.12        # tested 0.13.2
+python-dotenv        # optional: only read if a local .env is present

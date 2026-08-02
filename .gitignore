@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+.DS_Store
+.ipynb_checkpoints/
+
+# Generated figures are ignored EXCEPT the canonical paper figures, which are
+# force-added (git add -f) and stay tracked. Regenerate any figure by running its
+# script; checkpoints in models/ are tracked so figures reproduce out of the box.
+figures/*.pdf
+figures/*.png
+figures/*.mp4
+!figures/.gitkeep

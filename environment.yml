@@ -1,0 +1,16 @@
+# Conda environment for the self-contained 2D figures (the "iam" group).
+# Create with:  conda env create -f environment.yml  &&  conda activate uap-infinite-time
+# The CtD flip-flop figures use a separate environment; see requirements-ctd.txt.
+name: uap-infinite-time
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy>=1.24
+  - scipy>=1.10
+  - matplotlib>=3.5
+  - seaborn>=0.12
+  - pip
+  - pip:
+      - torch>=2.0
+      - python-dotenv
