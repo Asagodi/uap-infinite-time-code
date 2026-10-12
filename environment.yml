@@ -1,6 +1,6 @@
 # Conda environment for the self-contained figures.
 # Create with:  conda env create -f environment.yml  &&  conda activate uap-infinite-time
-# The CtD flip-flop figures use a separate environment; see the README.
+# The flip-flop figures also need the CtD toolkit in this environment; see the README.
 name: uap-infinite-time
 channels:
   - conda-forge

@@ -34,24 +34,19 @@ pyproject.toml          installable package (pip install -e .)
 
 ## Setup
 
-Two environments are used; most figures need only the first.
-
-**A. Self-contained figures.** Everything except the 3-bit flip-flop and the real
-head-direction ring:
-
 ```bash
 conda env create -f environment.yml && conda activate uap-infinite-time
-pip install -e .          # or: pip install -r requirements.txt
+pip install -e .
 ```
 
-**B. Flip-flop figures (optional).** Figures 4C, 4D and 7(F–H) distil a Neural ODE
-from a task-trained 3-bit flip-flop network and require the external
+This reproduces every figure except the 3-bit flip-flop panels (Figs 4C, 4D, 7F–H),
+which import a task-trained network from the external
 [Computation-through-Dynamics toolkit](https://github.com/snel-repo/ComputationThroughDynamicsToolkit).
-Install it into its own Python 3.10 environment, then:
+For those, install the toolkit into the same environment:
 
 ```bash
-pip install -r requirements.txt          # on top of the toolkit's environment
-cp .env.example .env                      # set CTD_TOOLKIT_DIR (and BTCA_CHECKPOINTS_DIR)
+pip install -e /path/to/ComputationThroughDynamicsToolkit
+cp .env.example .env      # set CTD_TOOLKIT_DIR (and BTCA_CHECKPOINTS_DIR)
 ```
 
 ## Quick start
