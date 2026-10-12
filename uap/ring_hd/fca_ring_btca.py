@@ -17,7 +17,7 @@ discretized into finitely many isolated fixed points (alternating sinks/sources)
 with a small residual along-ring drift -- the D-type discretization of Theorem 5,
 in a real trained model (and the mechanism of head-direction drift). We trace the
 ring, compute the autonomous on-ring dtheta/dt, count its zeros (the tiles), and
-show trajectories settle onto the discrete sinks.  Run with the iam env.
+show trajectories settle onto the discrete sinks.  Run in the uap-infinite-time environment.
 """
 import os, glob, pickle
 import numpy as np

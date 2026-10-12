@@ -14,7 +14,7 @@ Two regimes, exactly as in the paper:
       dominant) linear system for alpha_i, and correct both periods at once.
       This exercises the genuinely novel machinery (Lemmas 15-18).
 
-Run with the iam env.
+Run in the uap-infinite-time environment.
 """
 from uap import config
 import os, numpy as np, torch

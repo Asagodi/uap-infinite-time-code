@@ -3,7 +3,7 @@
 the real trained head-direction network (bottom) show the same two things: the
 along-ring drift with its alternating sinks (v) and sources (^), and the settling
 histogram of held states. Both discretize a continuum into isolated headings, the
-D-type error of Theorem 5. Run in the iam env."""
+D-type error of Theorem 5. Run in the uap-infinite-time environment."""
 import os, numpy as np
 from uap.common import harness as H
 from uap.demos2d import run_ring as RR
