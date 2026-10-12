@@ -3,7 +3,7 @@
 Code to reproduce the experiments in
 
 > **Universal Approximation Theorems for Dynamical Systems with Infinite-Time Horizon Guarantees**
-> Abel Ságodi and Il Memming Park (2026). [arXiv:2602.08640](https://arxiv.org/abs/2602.08640)
+> Ábel Ságodi and Il Memming Park. *NeurIPS 2026*. [OpenReview](https://openreview.net/forum?id=JFUIDA4w6C) · [arXiv:2602.08640](https://arxiv.org/abs/2602.08640)
 
 The paper proves that Neural ODEs can approximate structurally stable (Morse-Smale)
 dynamical systems over the whole infinite-time horizon in an ε-δ sense (trajectory
@@ -24,7 +24,7 @@ uap/                    the package (run modules with `python -m uap.<group>.<na
 ├── flipflop/           3-bit flip-flop (distil a Neural ODE from a CtD-trained network)
 ├── ring_hd/            head-direction ring (real BTCA network), D-type discretization
 └── scaling/            budget / width scaling and period-correction checks
-models/                 bundled checkpoints and caches (see models/PROVENANCE.md)
+models/                 bundled checkpoints and caches (see models/SOURCES.md)
 figures/                the paper figures (reference PDF + PNG); scripts write here too
 requirements-iam.txt    dependencies for the self-contained figures
 requirements-ctd.txt    dependencies for the flip-flop figures (external toolkit)
@@ -116,15 +116,22 @@ period-correction claims, self-contained, console output plus supplementary plot
 ## Citation
 
 ```bibtex
-@article{sagodi2026uap,
-  title   = {Universal Approximation Theorems for Dynamical Systems with Infinite-Time Horizon Guarantees},
-  author  = {S{\'a}godi, Abel and Park, Il Memming},
-  year    = {2026},
-  journal = {arXiv preprint arXiv:2602.08640}
+@inproceedings{Sagodi2026b,
+  author = {S\'agodi, \'Abel and Park, Il Memming},
+  title = {Universal Approximation Theorems for Dynamical Systems with Infinite-Time Horizon Guarantees},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year = 2026,
+  month = dec,
+  url = {https://openreview.net/forum?id=JFUIDA4w6C},
+  url2 = {https://neurips.cc/virtual/2026/loc/sydney/poster/153723},
+  eprint = {2602.08640},
+  archiveprefix = {arXiv},
+  primaryclass = {math.DS},
+  abstract = {Universal approximation theorems establish the expressive capacity of neural network architectures. For dynamical systems, existing results are limited to finite time horizons or systems with a globally stable equilibrium, leaving multistability and limit cycles unaddressed. We prove that Neural ODEs achieve $\varepsilon$-$\delta$ closeness -- trajectories within error $\varepsilon$ except for initial conditions of measure $< \delta$ -- over the infinite time horizon $[0,\infty)$ for three target classes: (1) Morse-Smale systems (a structurally stable class) with hyperbolic fixed points, (2) Morse-Smale systems with hyperbolic limit cycles via exact period matching, and (3) systems with normally hyperbolic continuous attractors via discretization. We further establish a temporal generalization bound: $\varepsilon$-$\delta$ closeness implies Lp error $\leq \varepsilon^p + \delta \cdot D^p$ for all $t \geq 0$, bridging topological guarantees to training metrics. These results provide the first universal approximation framework for multistable infinite-horizon dynamics.},
 }
 ```
 
 ## License
 
 MIT. See [LICENSE](LICENSE). Bundled checkpoints derived from external models are
-documented in [models/PROVENANCE.md](models/PROVENANCE.md).
+documented in [models/SOURCES.md](models/SOURCES.md).
