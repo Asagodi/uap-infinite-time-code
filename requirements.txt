@@ -1,7 +1,9 @@
-# Self-contained 2D / low-dimensional figures: Duffing (B-type), Van der Pol
-# (P-type), ring (D-type), 8-fixed-point, two-limit-cycle, and the budget/width
-# analyses. No external toolkit needed; the bundled checkpoints in models/
-# reproduce every figure in this group.
+# Dependencies for all figures.
+#
+# The 3-bit flip-flop figures (4C, 4D, 7F-H) additionally need the external
+# Computation-through-Dynamics toolkit, installed into its own Python 3.10
+# environment: https://github.com/snel-repo/ComputationThroughDynamicsToolkit
+# Install this file on top of that environment and set CTD_TOOLKIT_DIR in .env.
 #
 # Tested with Python 3.10.16 and the exact versions in the trailing comments.
 

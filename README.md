@@ -26,8 +26,7 @@ uap/                    the package (run modules with `python -m uap.<group>.<na
 └── scaling/            budget / width scaling and period-correction checks
 models/                 bundled checkpoints and caches (see models/SOURCES.md)
 figures/                the paper figures (reference PDF + PNG); scripts write here too
-requirements-iam.txt    dependencies for the self-contained figures
-requirements-ctd.txt    dependencies for the flip-flop figures (external toolkit)
+requirements.txt        dependencies (all figures)
 environment.yml         conda environment for the self-contained figures
 pyproject.toml          installable package (pip install -e .)
 .env.example            external-toolkit paths (only needed to re-train from scratch)
@@ -42,7 +41,7 @@ head-direction ring:
 
 ```bash
 conda env create -f environment.yml && conda activate uap-infinite-time
-pip install -e .          # or: pip install -r requirements-iam.txt
+pip install -e .          # or: pip install -r requirements.txt
 ```
 
 **B. Flip-flop figures (optional).** Figures 4C, 4D and 7(F–H) distil a Neural ODE
@@ -51,7 +50,7 @@ from a task-trained 3-bit flip-flop network and require the external
 Install it into its own Python 3.10 environment, then:
 
 ```bash
-pip install -r requirements-ctd.txt      # on top of the toolkit's environment
+pip install -r requirements.txt          # on top of the toolkit's environment
 cp .env.example .env                      # set CTD_TOOLKIT_DIR (and BTCA_CHECKPOINTS_DIR)
 ```
 
