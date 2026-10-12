@@ -16,7 +16,7 @@ The three targets exhibit the three error modes of the B/P/D taxonomy:
   ring      -> D-type (discretization of a continuous attractor)
 
 Everything is 2D so integration over dense initial-condition grids is cheap.
-Run with the iam environment (see README).
+Run in the uap-infinite-time environment (see README).
 """
 import os, glob, sys
 

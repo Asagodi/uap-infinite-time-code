@@ -15,7 +15,7 @@ show all three (i) recover all 8 sinks, (ii) reproduce the orthant basins, and
   - continuous-time RNN     x' = -x + W tanh(V x + b)
   - RBF network             x' = sum_k W_k exp(-||x-c_k||^2 / 2 s_k^2)   (C^inf)
 
-iam env, float64, CPU.  Writes figures/node_multiarch_8fp.pdf and RESULTS numbers.
+float64, CPU.  Writes figures/node_multiarch_8fp.pdf and RESULTS numbers.
 """
 from uap import config
 import os, sys, time

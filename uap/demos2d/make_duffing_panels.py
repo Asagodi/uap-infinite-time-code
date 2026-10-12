@@ -2,7 +2,7 @@
 """Two square panels from the Duffing B-type experiment, for main-text Figure 4:
 (A) the sup-error map with the separatrix collar, (B) the delta(eps) curve. Large
 fonts (these render small in a 4-panel row) and no in-panel legends (that info is in
-the caption). Reuses the cached Duffing Neural ODE. Run in the iam env."""
+the caption). Reuses the cached Duffing Neural ODE. Run in the uap-infinite-time environment."""
 import os, numpy as np
 import matplotlib.colors as mcolors
 from matplotlib.ticker import MaxNLocator

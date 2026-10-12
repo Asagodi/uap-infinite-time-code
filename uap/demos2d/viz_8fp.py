@@ -3,7 +3,7 @@
 recovers all 8 attractors of x_i' = x_i - x_i^3 and their orthant basins.
 Panels: (A) 3D trajectories of the LEARNED flow converging to the 8 cube
 corners, colored by basin; (B) a basin slice (learned) vs the true quadrant
-boundaries; (C) the eps-delta curve. iam env."""
+boundaries; (C) the eps-delta curve."""
 from uap import config
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
